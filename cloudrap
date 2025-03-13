@@ -1,0 +1,9 @@
+@AbapCatalog.sqlViewName: 'ZV_FLIGHTS'
+@EndUserText.label: 'Flight Details'
+define view ZCDS_FLIGHTS as select from sflight {
+    key carrid,
+    key connid,
+    key fldate,
+    price,
+    currency
+}
